@@ -1,0 +1,25 @@
+[global_config]
+  title_hide_sizetext = True
+  title_transmit_fg_color = "#e2baba"
+  title_inactive_fg_color = "#8c8c8c"
+  borderless = True
+  geometry_hinting = False
+  title_transmit_bg_color = "#000000"
+  hide_from_taskbar = True
+  title_inactive_bg_color = "#000000"
+[keybindings]
+[profiles]
+  [[default]]
+    background_darkness = 0.37
+    palette = "#5e5953:#cb3f3d:#34712d:#bbbb3e:#2d2d2d:#7b007b:#4eb9b9:#989898:#917c67:#ff5000:#009600:#dede29:#5e5953:#ffa5ff:#1cc2c2:#5e5953"
+    background_color = "#202020"
+    foreground_color = "#ebe7a7"
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
