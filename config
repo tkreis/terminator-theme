@@ -1,25 +1,60 @@
 [global_config]
+  handle_size = 0
   title_hide_sizetext = True
-  title_transmit_fg_color = "#e2baba"
-  title_inactive_fg_color = "#8c8c8c"
+  focus = mouse
+  title_inactive_fg_color = "#c8c8c8"
   borderless = True
   geometry_hinting = False
   title_transmit_bg_color = "#000000"
-  hide_from_taskbar = True
-  title_inactive_bg_color = "#000000"
+  tab_position = hidden
+  title_inactive_bg_color = "#141414"
 [keybindings]
+  resize_right = <Primary><Shift>Right
+  resize_left = <Primary><Shift>Left
 [profiles]
+  [[solarized-dark]]
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    background_color = "#002b36"
+    scrollback_infinite = True
+    cursor_color = "#eee8d5"
+    foreground_color = "#eee8d5"
+  [[solarized-light]]
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    background_color = "#eee8d5"
+    cursor_color = "#002b36"
+    foreground_color = "#002b36"
   [[default]]
-    background_darkness = 0.37
-    palette = "#5e5953:#cb3f3d:#34712d:#bbbb3e:#2d2d2d:#7b007b:#4eb9b9:#989898:#917c67:#ff5000:#009600:#dede29:#5e5953:#ffa5ff:#1cc2c2:#5e5953"
-    background_color = "#202020"
-    foreground_color = "#ebe7a7"
+    scrollbar_position = hidden
+    palette = "#383838:#dc322f:#68f56c:#0bcef9:#268bd2:#ff5363:#ff4e34:#eee8d5:#424242:#cb1628:#586e75:#657b83:#fcfcfc:#6c71c4:#93a1a1:#fdf6e3"
+    font = Monospace 9
+    use_system_font = False
+    cursor_color = "#b7b7b7"
+    foreground_color = "#fffeac"
+    icon_bell = False
+    show_titlebar = False
+    copy_on_selection = True
+    background_color = "#000715"
+  [[New Profile]]
+  [[chingon]]
+    scrollbar_position = hidden
+    palette = "#383838:#dc322f:#68f56c:#0bcef9:#268bd2:#ff5363:#ff4e34:#eee8d5:#424242:#cb1628:#586e75:#657b83:#fcfcfc:#6c71c4:#93a1a1:#fdf6e3"
+    font = Monospace 9
+    use_system_font = False
+    cursor_color = "#b7b7b7"
+    foreground_color = "#fffeac"
+    icon_bell = False
+    show_titlebar = False
+    copy_on_selection = True
+    background_color = "#000715"
+  [[New Profile 2]]
 [layouts]
   [[default]]
     [[[child1]]]
       type = Terminal
       parent = window0
+      profile = default
     [[[window0]]]
       type = Window
       parent = ""
+      size = 900, 600
 [plugins]
